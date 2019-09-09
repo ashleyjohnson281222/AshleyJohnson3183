@@ -1,0 +1,240 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+	<meta charset="utf-8"/>
+    <title>Fernando's Authentic Cuisine - Contact Us</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+
+		img{
+			color: #000000;
+
+			background-color: #A8842C;
+	
+			border: 7px solid;
+
+			border-radius: 5px;
+  
+			border-image: radial-gradient(rgb(255,255,255), rgb(0,0,0)) 1;		
+		}
+		[type=text]{
+			font-size: 12pt;
+
+			color: #000000;
+
+			background-color: #A8842C;
+
+			border-radius: 5px;
+
+			border: 5px solid;
+  
+			border-image: radial-gradient(rgb(255,255,255), rgb(0,0,0)) 1;
+		}
+		[type=email]{
+			font-size: 12pt;
+
+			color: #000000;
+
+			background-color: #A8842C;
+
+			border-radius: 5px;
+
+			border: 5px solid;
+  
+			border-image: radial-gradient(rgb(255,255,255), rgb(0,0,0)) 1;
+		}
+		[type=tel]{
+			font-size: 12pt;
+
+			color: #000000;
+
+			background-color: #A8842C;
+
+			border-radius: 5px;
+
+			border: 5px solid;
+  
+			border-image: radial-gradient(rgb(255,255,255), rgb(0,0,0)) 1;
+		}
+		[type=submit] {
+
+			color: #A8842C;
+
+			background-color: transparent;
+
+			border: 2px solid #A8842C; 
+
+			border-radius: 5px;
+
+			text-transform: uppercase; 
+
+		}
+
+		[type=reset] {
+
+			color: #A8842C;
+
+			background-color: transparent;
+
+			border: 2px solid #A8842C; 
+
+			border-radius: 5px;
+
+			text-transform: uppercase; 
+
+		}
+		[type=button] {
+
+			color: #A8842C;
+
+			background-color: transparent;
+
+			border: 2px solid #A8842C; 
+
+			border-radius: 5px;
+
+			text-transform: uppercase; 
+
+		}			
+
+		input[type=number]{
+		
+			font-size: 12pt;
+
+			color: #A8842C;
+
+			background-color: #461010;
+
+			border: 2px solid #A8842C; 
+
+			border-radius: 5px;
+		}
+
+		select { 
+			position: relative;
+
+			display: block;
+
+			padding: 10px 70px 10px 13px !important; 
+		
+			max-width: 100%; 
+		
+			height: auto !important; 
+		
+			border: 2px solid #A8842C; 
+    
+			border-radius: 5px; 
+    
+			background-color: transparent; 
+    
+			color: #A8842C; 
+    
+			font-size: 16px; 
+    
+			line-height: 14px !important; 
+    
+			appearance: none; 
+    
+			-webkit-appearance: none; 
+    
+			-moz-appearance: none; 
+		
+		} 
+
+		select option {
+
+			font-size: 16px;
+
+			background-color: #461010; 
+    
+			color: #A8842C; 
+    
+			font-size: 16px; 
+
+		} 
+
+			/* for IE and Edge */ 
+
+		select::-ms-expand { 
+
+			    display: none; 
+
+		} 
+
+		select:disabled::-ms-expand { 
+
+			    background: #461010; 
+		
+		}
+		main{
+			text-align: center;
+		}
+	</style>
+  </head>
+    <body>
+      <header><h1><img src="images/logo.jpg" alt="fernandoslogo image" width="200" height="150"><br><br>Contact Fernando's</h1></header>
+      	<nav>
+		<ul>
+		<li><a href="index.html">Home Page</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="history.html">History</a></li>
+		<li><a href="chef.html">Chefs</a></li>
+		</ul>
+      	</nav><br><br>
+      <main>
+       <div id="main">
+	<h2 style="color:#A8842C;">Enter your four-digit passcode, then click OK:</h2>
+		<input id="id1" type="number" min="1000" max="9999">
+		<input type=button value="OK" onclick="myFunction()">
+		<p id="passcode"></p>
+	</div>
+	<script>
+		function myFunction() {
+		var inpObj = document.getElementById("id1");
+		if (!inpObj.checkValidity() == true) {
+		   document.getElementById("passcode").innerHTML =
+		   inpObj.validationMessage;
+		} else {												
+			document.getElementById("passcode").innerHTML = "Passcode Valid";
+		}	
+		}
+	</script>
+		<h2 style="color:#ffffff;">Your Feedback is Appreciated!</h2>
+	<form action="" method="post" autocomplete="on">
+		<div align="center">
+			<select name="prefix">
+				<option>Select One</option>
+				<option value="mr">Mr.</option>
+				<option value="mrs">Mrs.</option>
+				<option value="ms">Ms.</option>
+				<option value="miss">Miss</option>
+				<option value="dr">Dr.</option>
+			</select>
+		</div>
+			<label><br>First Name</label><br><br>
+				<input type="text" name="first_name" required><br>
+			<label><br>Last Name</label><br><br>
+				<input type="text" name="last_name" required><br>
+			<label><br>Gender:</label><br><br>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female<br>
+			<label><br>Email</label><br><br>
+				<input type="email" name="email" autocomplete="off" required><br>
+			<label><br>Phone</label><br><br>
+				<input type="tel" name="phone"><br>
+			<label><br>Comments</label><br>
+				<textarea name="comments" cols="30" rows="10"></textarea><br>
+			   <input type="reset" value="Reset">
+			   <input type="submit" value="Submit"><br><br>
+			<input type="checkbox" name="newsletter" value="subscribe">Subscribe to our Newsletter	
+		</form>
+      </main>
+      <footer><p>
+
+<a href="index.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="history.html">History</a> | <a href="menu.html">Menu</a> | <a href="contactus.html">Contact Us</a> | <a href="chef.html">Chef</a> | <a href="gallery.html">Gallery</a>
+
+</p></footer>
+    </body>
+  </html>

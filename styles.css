@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+		label{
+
+		color: #ffffff;
+
+		}
+		main{
+			font-size: 16pt;
+
+			font-weight: bold;
+		}
+		form{
+			text-align: center;
+		}
+		textarea{
+			font-size: 12pt;
+			
+			color: #000000;
+
+			background-color: #A8842C;
+	
+			border: 5px solid;
+
+			border-radius: 5px;
+  
+			border-image: radial-gradient(rgb(255,255,255), rgb(0,0,0)) 1;		
+		}
+
+		ul {
+
+		        list-style: none;
+        
+			margin: 0;
+
+		        padding: 0;
+		}
+
+		footer a { 
+		
+			color: #ffffff
+		}			
+
+body {
+
+	background-color: #461010;
+
+	font-family: Arial, Tahoma, sans-serif;
+
+	color: #A8842C;
+
+	}
+img {
+
+	align: center;
+
+	}
+
+h1 {
+
+	color: #ffffff;
+
+	}
+h2 {
+
+	text-align: center;
+
+	}
+header {
+
+	background-color: #461010;
+
+	color: #A8842C;
+
+	text-align: center;
+
+	padding: 5px;
+
+	width: 80%;
+
+	margin-left: 10%;
+
+	}
+
+#container {
+
+	width: 100%;
+
+	}
+main {
+	width: 80%;
+
+	background-color: #461010;
+
+	float: left;
+
+	padding: 5px;
+
+	margin-left: 10%;
+
+	}
+
+nav {
+	font-size: 16pt;
+
+	font-weight: bold;
+
+	align: center;
+
+	color: #A8842C;
+
+	padding: 5px;
+
+	width: 80%;
+
+	margin-left: 10%;
+
+	font-weight: bold;
+
+	}
+
+nav ul {
+
+	list-style: none;
+
+	}
+
+nav ul li {
+
+	float: left;
+
+	padding: 5px;
+
+	}
+
+nav ul li a:link, nav ul li a:visited {
+
+	display: block;
+
+	width: 150px;
+
+	margin-rght: 4px;
+
+	color: #A8842C;
+
+	padding: 2px 4px 2px 4px;
+
+	background-color: #461010;
+
+	text-decoration: none;
+
+	border-radius: 15px 50px;
+
+	border: 3px solid;
+  
+	border-image: radial-gradient(rgb(255,255,255), rgb(0,0,0)) 1;
+
+}
+
+nav ul li a:hover {
+
+	color: #ffffff;
+
+	background-color: #461010;
+
+	}
+table {
+	width: 100%;
+
+	color: #000000;
+
+	background-color: #A8842C;
+
+	border: 5px solid;
+  
+	border-image: radial-gradient(rgb(255,255,255), rgb(0,0,0)) 1;
+
+}
+
+.h6{
+
+     font-style: italic;
+
+}
+thead {
+
+	font-size: 20pt;
+
+}
+
+th {
+
+	height: 50px;
+
+	text-align: center;
+
+	color: #A8842C;
+
+	background-color: #000000
+
+}
+
+td {
+
+	height: 50px;
+
+	text-align: center;
+
+}
+
+ol {
+	font-size: 20pt;
+
+	font-weight: bold;
+
+	text-align: center;
+  
+	list-style-position: inside;
+
+}
+
+
+footer {
+
+	clear: both;
+
+	background-color: #461010;
+
+	color: #ffffff;
+
+	text-align: center;
+
+	margin-left: 10%;
+
+	padding: 5px;
+
+	font-size: 12pt;
+
+	width: 80%;
+
+	}
